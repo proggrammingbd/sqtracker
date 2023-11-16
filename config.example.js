@@ -4,10 +4,10 @@
 module.exports = {
   envs: {
     // The name of your tracker site. Maximum 20 characters.
-    SQ_SITE_NAME: "sqtracker demo",
+    SQ_SITE_NAME: "TORRENTSFIGHTER",
 
     // A short description of your tracker site. Maximum 80 characters.
-    SQ_SITE_DESCRIPTION: "A short description for your tracker site",
+    SQ_SITE_DESCRIPTION: "Okey Let's Build a torrents ",
 
     // A map of custom hex colours to use as the theme of your site.
     // If not specified, the default light and dark themes will be used.
@@ -33,7 +33,7 @@ module.exports = {
     SQ_ALLOW_ANONYMOUS_UPLOADS: false,
 
     // Minimum allowed ratio. Below this users will not be able to download. Set to -1 to disable.
-    SQ_MINIMUM_RATIO: 0.75,
+    SQ_MINIMUM_RATIO: 0.50,
 
     // Maximum allowed hit'n'runs. Above this users will not be allowed to download. Set to -1 to disable.
     // A user has committed a hit'n'run when a torrent is fully downloaded and not seeded to a 1:1 ratio.
@@ -43,7 +43,7 @@ module.exports = {
     // Each has an array of zero or more sources available within that category.
     SQ_TORRENT_CATEGORIES: {
       Movies: ["BluRay", "WebDL", "HDRip", "WebRip", "DVD", "Cam"],
-      TV: [],
+      TV: [" Web-DL"],
       Music: [],
       Books: [],
     },
@@ -77,7 +77,7 @@ module.exports = {
     SQ_BASE_URL: "https://sqtracker.dev",
 
     // The URL of your API. Under the recommended setup, it should be `${SQ_BASE_URL}/api`.
-    SQ_API_URL: "https://sqtracker.dev/api",
+    SQ_API_URL: "${SQ_BASE_URL}/api",
 
     // The URL of your MongoDB server. Under the recommended setup, it should be `mongodb://sq_mongodb/sqtracker`.
     SQ_MONGO_URL: "mongodb://sq_mongodb/sqtracker",
